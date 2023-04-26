@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<title>cm to Feet</title>
+<body>
+
+
+<p>
+  <label>cm: </label>
+  <input id="inputcm" type="number" placeholder="cm" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Result into feet:  <span id="outputFeet"></span></p>
+
+<script>
+function LengthConverter(valNum) {
+  document.getElementById("outputFeet").innerHTML=valNum*0.032808;
+}
+</script>
+</body>
+</html>
